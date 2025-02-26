@@ -5,7 +5,7 @@ A FastAPI-based service that scrapes web content, generates summaries, and perfo
 ## Features
 
 - Web scraping of text content from URLs
-- Text summarization using DistilBART-CNN (a smaller, faster version of BART)
+- Text summarization using T5-Small (a compact, efficient summarization model)
 - Sentiment analysis using DistilBERT
 - Automated recommendations based on content analysis
 - RESTful API endpoints
@@ -18,6 +18,7 @@ A FastAPI-based service that scrapes web content, generates summaries, and perfo
 ```bash
 python -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
+```
 
 3. Install dependencies:    
 
@@ -51,5 +52,5 @@ The application uses the following configuration settings:
 
 - `SCRAPING_TIMEOUT`: Timeout for web scraping (default: 10 seconds)
 - `USER_AGENT`: User agent string for web scraping (default: Chrome browser)
-- `SUMMARIZATION_MODEL`: Model for text summarization (default: DistilBART-CNN)
+- `SUMMARIZATION_MODEL`: Model for text summarization (default: T5-Small)
 - `SENTIMENT_MODEL`: Model for sentiment analysis (default: DistilBERT)
